@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobiletoken_navgraph"
+    app:startDestination="@id/otpFragment">
+
+    <fragment
+        android:id="@+id/otpFragment"
+        android:name="com.poc.mobiletoken.OtpFragment"
+        android:label="fragment_otp"
+        tools:layout="@layout/fragment_otp">
+        <deepLink app:uri="navpoc://otp" />
+        <action
+            android:id="@+id/action_otpFragment_to_otpSuccessFragment"
+            app:destination="@id/otpSuccessFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/otpSuccessFragment"
+        android:name="com.poc.mobiletoken.OtpSuccessFragment"
+        android:label="fragment_otp_success"
+        tools:layout="@layout/fragment_otp_success" />
+</navigation>

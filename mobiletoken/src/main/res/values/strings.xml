@@ -1,0 +1,4 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="text_otp" tools:ignore="ExtraTranslation">Verify the OTP</string>
+</resources>

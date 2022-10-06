@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dashboard_nav_graph"
+    app:startDestination="@id/accounts">
+
+    <fragment
+        android:id="@+id/accounts"
+        android:name="com.poc.dashboard.Accounts"
+        android:label="fragment_accounts"
+        tools:layout="@layout/fragment_accounts" />
+    <fragment
+        android:id="@+id/positionsFragment"
+        android:name="com.poc.dashboard.PositionsFragment"
+        android:label="fragment_positions"
+        tools:layout="@layout/fragment_positions" />
+    <fragment
+        android:id="@+id/transactionsFragment"
+        android:name="com.poc.dashboard.TransactionsFragment"
+        android:label="fragment_transactions"
+        tools:layout="@layout/fragment_transactions" />
+</navigation>

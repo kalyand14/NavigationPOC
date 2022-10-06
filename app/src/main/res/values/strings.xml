@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">NavigationPOC</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_payment">Payment</string>
+    <string name="title_settings">Settings</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="app_splash_fragment">Splash fragment</string>
+</resources>

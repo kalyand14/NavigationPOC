@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/payment_nav_graph"
+    app:startDestination="@id/paymentHomeFragment">
+
+    <fragment
+        android:id="@+id/paymentHomeFragment"
+        android:name="com.poc.payment.PaymentHomeFragment"
+        android:label="fragment_payment_home"
+        tools:layout="@layout/fragment_payment_home">
+        <action
+            android:id="@+id/action_paymentHomeFragment_to_paymentFlow1"
+            app:destination="@id/paymentFlow1" />
+        <action
+            android:id="@+id/action_paymentHomeFragment_to_paymentFlow2"
+            app:destination="@id/paymentFlow2" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/paymentFlow1"
+        android:name="com.poc.payment.PaymentFlow1Step1Fragment"
+        android:label="fragment_payment_flow1"
+        tools:layout="@layout/fragment_payment_flow1_step1">
+        <action
+            android:id="@+id/action_paymentFlow1_to_paymentFlow1Step2Fragment"
+            app:destination="@id/paymentFlow1Step2Fragment" />
+
+        <deepLink app:uri="myApp://paymentFlow1" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/paymentFlow2"
+        android:name="com.poc.payment.PaymentFlow2Step1Fragment"
+        android:label="fragment_payment_flow2"
+        tools:layout="@layout/fragment_payment_flow2_step1">
+        <action
+            android:id="@+id/action_paymentFlow2_to_paymentFlow2Step2Fragment"
+            app:destination="@id/paymentFlow2Step2Fragment" />
+        <deepLink app:uri="myApp://paymentFlow2" />
+    </fragment>
+    <fragment
+        android:id="@+id/paymentFlow1Step2Fragment"
+        android:name="com.poc.payment.PaymentFlow1Step2Fragment"
+        android:label="fragment_payment_flow1_step2"
+        tools:layout="@layout/fragment_payment_flow1_step2">
+        <action
+            android:id="@+id/action_paymentFlow1Step2Fragment_to_paymentHomeFragment"
+            app:destination="@id/paymentHomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/paymentFlow2Step2Fragment"
+        android:name="com.poc.payment.PaymentFlow2Step2Fragment"
+        android:label="fragment_payment_flow2_step2"
+        tools:layout="@layout/fragment_payment_flow2_step2">
+        <action
+            android:id="@+id/action_paymentFlow2Step2Fragment_to_paymentHomeFragment"
+            app:destination="@id/paymentHomeFragment" />
+    </fragment>
+
+</navigation>

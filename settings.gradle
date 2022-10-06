@@ -1,0 +1,22 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "NavigationPOC"
+include ':app'
+include ':dashboard'
+include ':payment'
+include ':mobiletoken'
+include ':auth'
+include ':onboarding'
+include ':settings'

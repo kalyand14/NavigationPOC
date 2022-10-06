@@ -1,0 +1,6 @@
+<resources>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="auth_txt_userId">UserName</string>
+    <string name="auth_txt_password">Password</string>
+    <string name="auth_txt_login">Login</string>
+</resources>
